@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "/home/aseel/Desktop/taskslist/obj/Debug/net8.0/scopedcss/projectbundle/taskslist.bundle.scp.css",
+      "PackagePath": "staticwebassets/taskslist.bundle.scp.css"
+    },
+    {
+      "Id": "/home/aseel/Desktop/taskslist/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/home/aseel/Desktop/taskslist/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/home/aseel/Desktop/taskslist/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/home/aseel/Desktop/taskslist/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.taskslist.props",
+      "PackagePath": "build\\taskslist.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.taskslist.props",
+      "PackagePath": "buildMultiTargeting\\taskslist.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.taskslist.props",
+      "PackagePath": "buildTransitive\\taskslist.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.taskslist.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

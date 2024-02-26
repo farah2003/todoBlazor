@@ -1,0 +1,58 @@
+﻿@page "/home"
+
+<PageTitle>Todo list</PageTitle>
+<div class="container">
+    <h1 class="title">TO-DO NOW</h1>
+    <div class="task-input-wraper">
+        <input type="text" @bind="todo.name" />
+        <div class="button">
+            <button @onclick="DeleteTask    ">Click me</button>
+        </div>
+    </div>
+    <div class="task-list">
+        <p>@name</p>
+        @if (todo != null)
+        {
+            <div class="task" role="status">
+                <p> Task @todo.title</p>
+                <div class="delete-btn" @onclick="()=>DeleteTask(todo)">
+                    Delete
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    public ToDo todo;
+    public String name;
+
+    private HttpClient HttpClient = new HttpClient();
+
+       public void DeleteTask()
+    {
+       Console.WriteLine("Data fetched successfully");
+    }
+
+    public async Task FetchData()
+    {
+        try
+        {
+            Console.WriteLine("Fetching data...");
+            todo = await HttpClient.GetFromJsonAsync<ToDo>("https://jsonplaceholder.typicode.com/todos/1");
+            Console.WriteLine("Data fetched successfully");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+    }
+
+    public class ToDo
+    {
+        public int id { get; set; }
+        public string title { get; set; }
+        public int userId { get; set; }
+        public bool completed { get; set; }
+    }
+}
